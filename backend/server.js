@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
     res.send('hello world');
 })
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3011;
 const uri = process.env.MONGO_DB_URI;
 
 mongoose.connect(uri)
