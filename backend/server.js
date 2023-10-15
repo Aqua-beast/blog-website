@@ -24,9 +24,9 @@ app.use('/', adminRouter);
 app.use('/', ProfileRouter);
 app.use('/', articleRouter)
 
-// app.get('/', (req, res) => {
-//     res.json({ message: 'hello world' });
-// })
+app.get('/', (req, res) => {
+    res.json({ message: 'hello world' });
+})
 
 const PORT = 3011;
 const uri = process.env.MONGO_DB_URI;
