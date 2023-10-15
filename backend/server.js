@@ -25,7 +25,7 @@ app.use('/', ProfileRouter);
 app.use('/', articleRouter)
 
 app.get('/', (req, res) => {
-    res.json({ message: 'hello world' });
+    res.send('hello world');
 })
 
 const PORT = 3011;
