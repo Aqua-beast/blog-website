@@ -1,0 +1,38 @@
+.article-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1.5rem;
+}
+
+.article-form-title {
+    font-size: var(--h1-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 4rem;
+    padding: 1rem;
+}
+
+.form-group-input {
+    height: 30px;
+}
+
+.form-group-btn {
+    font-size: var(--normal-font-size);
+    background-color: var(--fourth-color);
+    color: white;
+    padding: 0.4rem;
+}
+
+.form-group-btn:hover {
+    background-color: white;
+    color: var(--fourth-color);
+}

@@ -1,0 +1,18 @@
+
+.error-page {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    background-image: url('https://media3.giphy.com/media/C21GGDOpKT6Z4VuXyn/200w.gif?cid=82a1493btt34hmks5h3unsbbuby2wu53spjkayq8yeg91a9o&ep=v1_gifs_related&rid=200w.gif&ct=g');
+    height: 50vh;
+    width: 50vh;
+    background-attachment:local;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

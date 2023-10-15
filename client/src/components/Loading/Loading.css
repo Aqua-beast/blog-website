@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+    div div {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+

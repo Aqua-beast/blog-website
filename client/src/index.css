@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+:root{
+    --first-color:#e9ecef;
+    --second-color:#586f7c;
+    --third-color:#adb5bd;
+    --fourth-color:#212529;
+    --big-font-size:2.8rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1.125rem;
+    --normal-font-size:.948rem;
+    --small-font-size:.813rem;
+    --small-font-size:.75rem;
+    --font-logo: 'Playfair Display', serif;
+} 
+
+/* font sizes for large Devices */
+@media screen and(min-width:968px){
+    :root{
+        --big-font-size:4rem;
+        --h1-font-size:2.25rem;
+        --h2-font-size:1.5rem;
+        --h3-font-size:1.25rem;
+        --normal-font-size:1rem;
+        --small-font-size:.875rem;
+        --small-font-size:.813rem;
+    } 
+}

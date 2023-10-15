@@ -1,0 +1,90 @@
+.single-blog-display-container{
+    background-color: var(--first-color);
+    margin-bottom: 5rem;
+}
+
+.single-blog-display-title{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.icon-profile {
+    padding: 0.5rem;
+    background-color: lightblue;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.icon-profile:hover {
+    background-color: lightskyblue;
+}
+
+.profile-design-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: var(--small-font-size);
+}
+
+.single-blog-display-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-details-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 2.5rem 0rem 2.5rem;
+    margin-bottom: 5.5rem;
+}
+
+.like-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-left: 5rem;
+}
+
+.like-icon {
+    font-size: var(--h2-font-size);
+}
+
+.like-icon:hover {
+    color: lightblue;
+}
+/* 
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+} */
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem; /* Add padding for spacing */
+    background-color: #fff; /* Add a background color */
+    border: 1px solid #ddd; /* Add a border for separation */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    margin-top: 2rem; /* Add some margin to separate from the content above */
+}
+
+.comment-box > div {
+    margin-bottom: 1rem; /* Add spacing between elements */
+}

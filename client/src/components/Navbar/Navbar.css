@@ -1,0 +1,193 @@
+.nav-common {
+    background-color: var(--fourth-color);
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo>img{
+    width: 2rem;
+    height: auto;
+    cursor: pointer;
+    margin-right: 2rem;
+    border: #000 solid;
+    background-color: aliceblue;
+}
+.logo>img:hover {
+background-color: var(--third-color);
+}
+
+.logo>img~input{
+    margin-right: 0.5rem;
+}
+
+.logo>img~input~svg{
+    color: aliceblue;
+}
+
+.search-icon{
+    color: azure;
+}
+
+.search-icon:hover {
+    color: aqua;
+}
+
+.brand-name {
+    text-transform: uppercase;
+    color: var(--third-color);
+    font-size: var(--big-font-size);
+    font-style: var(--font-logo);
+    display: flex;
+    align-items: center;
+}
+
+.just-a-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.right-menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+
+.right-menu-items-links {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    margin-left: 2.5rem;
+}
+
+.right-menu-items-links:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.right-menu-items-links>img {
+    width: 2rem;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.right-menu-items-links>img:hover{
+    background-color: var(--third-color);
+}
+
+
+@media screen and (max-width: 1020px){
+    .logo>img {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline;
+        width: 30px;
+        height: 5px;
+        background-color: azure;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hamburger-menu::after {
+        content: "";
+        top: 15px;
+        width: 30px;
+        height: 5px;
+        background-color: azure;
+        position: absolute;
+    }
+
+    .hamburger-menu::before {
+        content: "";
+        bottom: 15px;
+        width: 30px;
+        height: 5px;
+        background-color: azure;
+        position: absolute;
+    }
+
+    .cross-menu {
+        width: 30px;
+        height: 5px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .cross-menu::before {
+        width: 30px;
+        height: 5px;
+        content: '';
+        position: absolute;
+        rotate: -45deg;
+        background-color: azure;
+    }
+
+    .cross-menu::after {
+        width: 30px;
+        height: 5px;
+        content: '';
+        position: absolute;
+        rotate: 45deg;
+        background-color: azure;
+    }
+
+    .just-a-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+    }
+
+    .right-menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: absolute;
+        top: 3rem;
+        background-color: var(--second-color);
+        padding-bottom: 1rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .right-menu-items {
+        padding: 1rem;
+    }
+
+    .right-menu-items:hover {
+        background-color: var(--third-color);
+    }
+
+    .right-menu-items-links {
+        margin: auto;
+        color: var(--fourth-color);
+    }
+
+    .right-menu-items-links:hover {
+        color: var(--first-color);
+    }
+
+    .right-menu-items-links>img {
+        border-radius: 0px;
+    }
+}

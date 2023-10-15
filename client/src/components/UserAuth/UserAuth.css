@@ -1,0 +1,110 @@
+.UserAuth-container {
+    margin: 5rem 2rem 0rem 2rem;
+    padding: 3rem 5rem;
+    background-color: var(--second-color);
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.UserAuth-container-form {
+    color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    border: white solid 2px;
+    padding: 2rem;
+}
+
+.ucfd {
+    margin-bottom: 1rem;
+}
+
+.ucfdh {
+    color: var(--first-color);
+    font-size: var(--big-font-size);
+}
+
+.form-item-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 2rem;
+}
+
+.form-item {
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+}
+
+.form-item-input {
+    width: 50%;
+}
+
+.form-button {
+    background-color: var(--third-color);
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    padding: 0.5rem;
+    margin: 1.5rem 0rem;
+}
+
+.form-button:hover {
+    color: var(--third-color);
+    background-color: var(--first-color)
+}
+
+.form-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.line1 {
+    font: bold;
+    color: var(--first-color);
+    text-transform: uppercase;
+    font-size: var(--normal-font-size);margin-bottom: 0.5rem;
+}
+
+.line2 {
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.5rem;
+}
+
+.link {
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+
+.animation-login {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.animation-login>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 968px) {
+    .UserAuth-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 2.5rem;
+    }
+    .animation-login {
+        margin-top: 1.5rem;
+    }
+}

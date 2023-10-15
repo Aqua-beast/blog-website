@@ -1,0 +1,80 @@
+.contact-container {
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+
+.heading-contact-h1 {
+    font-size: var(--h1-font-size);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-edit-container {
+    padding: 1rem;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me-form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: 1rem;
+}
+
+/* Form Input Styles */
+.contact-me-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-me-form input,
+.contact-me-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-me-form textarea {
+    min-height: 150px; /* Adjust the height as needed */
+}
+
+.contact-me-form input:focus,
+.contact-me-form textarea:focus {
+    border-color: #0078d4; /* Highlight the input field when focused */
+}
+
+/* Submit Button Styles */
+.contact-submit-button {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-submit-button:hover {
+    background-color: #005ea2; /* Darker shade when hovered */
+}
+
+/* SiMinutemailer Icon Styles */
+.contact-submit-button svg {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.contact-me-form-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
