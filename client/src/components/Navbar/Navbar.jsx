@@ -41,7 +41,7 @@ function Navbar(props) {
   const email = localStorage.getItem('email');
 
   useEffect(() => {
-    axios.get(`http://localhost:3011/profile/${email}`,
+    axios.get(`https://blog-website-cyan.vercel.app//profile/${email}`,
       {
         headers: {
           "x-access-token": localStorage.getItem('token')
