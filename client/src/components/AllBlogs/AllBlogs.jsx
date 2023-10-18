@@ -24,7 +24,7 @@ function AllBlogs() {
 
     const deleteHandle = async (title) => {
         try {
-            const res = await axios.delete(`https://blog-website-cyan.vercel.app//articles/delete/${title}`, {
+            const res = await axios.delete(`https://blog-website-cyan.vercel.app/articles/delete/${title}`, {
                 withCredentials: true,
                 credentials: 'include',
                 headers: {
@@ -41,7 +41,7 @@ function AllBlogs() {
     const id = JSON.parse(localStorage.getItem('userdata')).username;
 
     useEffect(() => {
-        axios.get('https://blog-website-cyan.vercel.app//articles', {
+        axios.get('https://blog-website-cyan.vercel.app/articles', {
             headers: {
                 "x-access-token": localStorage.getItem("token"),
             },

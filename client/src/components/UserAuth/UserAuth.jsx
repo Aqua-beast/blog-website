@@ -71,7 +71,7 @@ const UserAuth = () => {
         localStorage.setItem('email', formData.email)
         console.log(formData.email);
       }
-      const response = await axios.post(`https://blog-website-cyan.vercel.app//auth/${UserAuth}`, formData, {
+      const response = await axios.post(`https://blog-website-cyan.vercel.app/auth/${UserAuth}`, formData, {
         withCredentials: true,
         credentials: 'include',
         headers: {

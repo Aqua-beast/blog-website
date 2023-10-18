@@ -30,7 +30,7 @@ function EditPageComponenet() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://blog-website-cyan.vercel.app//articles/${titleArticle}`, {
+        const response = await axios.get(`https://blog-website-cyan.vercel.app/articles/${titleArticle}`, {
           headers: {
             'x-access-token': localStorage.getItem('token'),
           },
@@ -54,7 +54,7 @@ function EditPageComponenet() {
       const userdata = JSON.parse(localStorage.getItem('userdata'));
       setFormData({ author: userdata.username });
       if (formData.title !== '' && formData.markdown !== '') {
-        const dta = await axios.patch(`https://blog-website-cyan.vercel.app//articles/edit/${titleArticle}`, formData, {
+        const dta = await axios.patch(`https://blog-website-cyan.vercel.app/articles/edit/${titleArticle}`, formData, {
           withCredentials: true,
           credentials: 'include',
           headers: {
