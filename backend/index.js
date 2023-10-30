@@ -11,7 +11,7 @@ require('dotenv').config();
 const app = express();
 
 const corsOption = {
-    origin: 'https://blog-website-nf7h.vercel.app',
+    origin: 'https://blog-website-nf7h-3jv9g7k4j-aqua-beast.vercel.app',
     credentials: true,
 }
 
