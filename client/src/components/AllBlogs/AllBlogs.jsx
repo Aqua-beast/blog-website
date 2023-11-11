@@ -17,10 +17,10 @@ function AllBlogs() {
 
     const [articleNames, setArticleNames] = useState([]);
 
-    // const editHandle = (title) => {
-    //     const id = JSON.parse(localStorage.getItem('userdata')).username;
-    //     Navigate(`/${id}/${title}/edit`);
-    // }
+    const editHandle = (title) => {
+        const id = JSON.parse(localStorage.getItem('userdata')).username;
+        Navigate(`/${id}/${title}/edit`);
+    }
 
     const deleteHandle = async (title) => {
         try {
