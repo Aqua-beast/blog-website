@@ -38,23 +38,24 @@ function Navbar(props) {
   const details = () => {
     setIsProfileOpen(!isProfileOpen);
   }
-  const email = localStorage.getItem('email');
-
-  useEffect(() => {
-    axios.get(`https://blog-website-nu-flame.vercel.app/profile/${email}`,
-      {
-        headers: {
-          "x-access-token": localStorage.getItem('token')
-        }
-      })
-      .then((res) => {
-        localStorage.setItem('userdata', JSON.stringify(res.data.details));
-        console.log(JSON.parse(localStorage.getItem('userdata')));
-      })
-      .catch((err) => {
-        console.error(err);
-      })
-  }, [email])
+  
+  // const email = localStorage.getItem('email')==null?"":localStorage.getItem('email');
+  // useEffect(() => {
+    
+  //   axios.get(`http://localhost:3011/profile/${email}`,
+  //     {
+  //       headers: {
+  //         "x-access-token": localStorage.getItem('token')
+  //       }
+  //     })
+  //     .then((res) => {
+  //       localStorage.setItem('userdata', JSON.stringify(res.data.details));
+  //       console.log(JSON.parse(localStorage.getItem('userdata')));
+  //     })
+  //     .catch((err) => {
+  //       console.error(err);
+  //     })
+  // }, [email])
 
     const [articles, setArticles] = useState([]); // Initialize articles as an empty array
 

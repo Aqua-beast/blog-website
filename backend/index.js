@@ -11,7 +11,7 @@ require('dotenv').config();
 const app = express();
 
 const corsOption = {
-    origin: 'https://blog-website-mc1r.vercel.app',
+    origin: 'http://localhost:3000',
     credentials: true,
 }
 

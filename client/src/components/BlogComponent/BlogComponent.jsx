@@ -51,7 +51,7 @@ const BlogComponent = () => {
       formDataToSend.append('image', formData.imageFile);
 
       if (formData.title !== '' && formData.markdown !== '') {
-        const dta = await axios.post(`https://blog-website-nu-flame.vercel.app/articles/${userdata.username}/new`, formDataToSend, {
+        const dta = await axios.post(`http://localhost:3011/articles/${userdata.username}/new`, formDataToSend, {
           withCredentials: true,
           credentials: 'include',
           headers: {
@@ -108,6 +108,7 @@ const BlogComponent = () => {
               id="image"
               name="image"
               accept="image/*"
+              required
               onChange={handleImageChange}
               className='form-group-input'
             />

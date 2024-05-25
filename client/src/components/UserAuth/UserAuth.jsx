@@ -68,10 +68,12 @@ const UserAuth = () => {
     try {
       if (UserAuth === 'login') {
         setIsLoading(true);
-        localStorage.setItem('email', formData.email)
+        localStorage.setItem('email', formData.email
+          
+        )
         console.log(formData.email);
       }
-      const response = await axios.post(`https://blog-website-nu-flame.vercel.app/auth/${UserAuth}`, formData, {
+      const response = await axios.post(`http://localhost:3011/auth/${UserAuth}`, formData, {
         withCredentials: true,
         credentials: 'include',
         headers: {
