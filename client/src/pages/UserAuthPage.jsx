@@ -6,7 +6,7 @@ function UserAuthPage() {
 
     // useEffect(() => {
       
-    //   axios.get(`http://localhost:3011/profile/${email}`,
+    //   axios.get(`https://blog-website-server-tau.vercel.app/profile/${email}`,
     //     {
     //       headers: {
     //         "x-access-token": localStorage.getItem('token')

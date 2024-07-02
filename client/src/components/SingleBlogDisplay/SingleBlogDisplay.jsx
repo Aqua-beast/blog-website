@@ -17,7 +17,7 @@ function SingleBlogDisplay() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3011/articles/${slug}`, {
+      .get(`https://blog-website-server-tau.vercel.app/articles/${slug}`, {
         headers: {
           'x-access-token': localStorage.getItem('token'),
         },
@@ -36,7 +36,7 @@ function SingleBlogDisplay() {
 
   const handleLike = () => {
     axios
-      .post(`http://localhost:3011/articles/${slug}/like`, {}, {
+      .post(`https://blog-website-server-tau.vercel.app/articles/${slug}/like`, {}, {
         headers: {
           'x-access-token': localStorage.getItem('token'),
         },
@@ -53,7 +53,7 @@ function SingleBlogDisplay() {
 
   const handleComment = () => {
     axios
-      .post(`http://localhost:3011/articles/${slug}/comment`, {username: JSON.parse(localStorage.getItem("userdata")).username ,comment: newComment }, {
+      .post(`https://blog-website-server-tau.vercel.app/articles/${slug}/comment`, {username: JSON.parse(localStorage.getItem("userdata")).username ,comment: newComment }, {
         headers: {
           'x-access-token': localStorage.getItem('token'),
         },

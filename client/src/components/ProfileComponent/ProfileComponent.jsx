@@ -21,7 +21,7 @@ const ProfileComponent = ({ isOpen, onClose }) => {
   useEffect(() => {
     // Fetch user data from the server
     axios
-      .get(`http://localhost:3011/profile/${email}`, {
+      .get(`https://blog-website-server-tau.vercel.app/profile/${email}`, {
         headers: {
           'x-access-token': localStorage.getItem('token'),
         },
@@ -38,7 +38,7 @@ const ProfileComponent = ({ isOpen, onClose }) => {
 
   const onLogOut = async () => {
     try {
-      const response = await axios.get(`http://localhost:3011/auth/logout`);
+      const response = await axios.get(`https://blog-website-server-tau.vercel.app/auth/logout`);
       toast(response.data.message);
       setTimeout(()=>{
         Navigate('/');
@@ -70,7 +70,7 @@ const ProfileComponent = ({ isOpen, onClose }) => {
 
   const ImageUploader = async () => {
     try {
-      const response = await axios.patch(`http://localhost:3011/profile/${email}`, imgData, {
+      const response = await axios.patch(`https://blog-website-server-tau.vercel.app/profile/${email}`, imgData, {
         headers: {
           'x-access-token': localStorage.getItem('token'),
           'Content-Type': 'multipart/form-data',

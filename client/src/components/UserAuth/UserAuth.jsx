@@ -73,7 +73,7 @@ const UserAuth = () => {
         )
         console.log(formData.email);
       }
-      const response = await axios.post(`http://localhost:3011/auth/${UserAuth}`, formData, {
+      const response = await axios.post(`https://blog-website-server-tau.vercel.app/auth/${UserAuth}`, formData, {
         withCredentials: true,
         credentials: 'include',
         headers: {
