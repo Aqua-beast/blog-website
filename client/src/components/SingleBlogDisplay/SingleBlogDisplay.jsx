@@ -43,7 +43,7 @@ function SingleBlogDisplay() {
       })
       .then((response) => {
         setLikes(response.data.likes);
-        // console.log(response.data.likes);
+        console.log(response.data.likes);
         toast(response.data.message)
       })
       .catch((error) => {
@@ -96,12 +96,12 @@ function SingleBlogDisplay() {
       </div>
       <div className='like-box'>
         <AiFillLike className='like-icon' onClick={handleLike} />
-        <span style={{color: 'blue'}}>{likes}</span>
+        <span style={{color: 'blue'}}>{blogDetails.Like}</span>
       </div>
 
       <div className='comment-box'>
         <div className='single-blog-display-title'>Comments Section</div>
-        {comments.map((comment, index) => (
+        {blogDetails.Comment.map((comment, index) => (
           <div key={index}>
             <div>{comment.username}</div>
             <div>{comment.comment}</div>

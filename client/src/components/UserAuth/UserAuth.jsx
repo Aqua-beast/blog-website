@@ -82,7 +82,6 @@ const UserAuth = () => {
       });
       if (UserAuth === 'signup') {
         console.log('signup');
-        // alert(response.data.message);
         toast(response.data.message);
         setTimeout(() => { SetUserAuth('login') }, 6000);
       }
